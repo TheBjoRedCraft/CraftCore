@@ -1,0 +1,16 @@
+players:
+messages:
+
+
+  god:
+    on: "<color:#40d1db>Du <color:#3b92d1>bist nun im <color:#40d1db>God Modus<color:#3b92d1>!"
+    off: "<color:#40d1db>Du <color:#3b92d1>bist nun nicht mehr im <color:#40d1db>God Modus<color:#3b92d1>!"
+    op:
+      on: "<color:#3b92d1>Der Spieler <color:#40d1db>%player% <color:#3b92d1>ist nun im <color:#40d1db>God Modus<color:#3b92d1>!"
+      off: "<color:#3b92d1>Der Spieler <color:#40d1db>%player% <color:#3b92d1>ist nun nicht mehr im <color:#40d1db>God Modus<color:#3b92d1>!"
+    target:
+      on: "<color:#40d1db>Du <color:#3b92d1>hast <color:#40d1db>%target% in den <color:#40d1db>God Modus<color:#3b92d1> gesetzt!"
+      off: "<color:#40d1db>Du <color:#3b92d1>hast <color:#40d1db>%target% aus dem <color:#40d1db>God Modus<color:#3b92d1> gesetzt!"
+      op:
+        off: "<color:#3b92d1>Der Spieler <color:#40d1db>%player% <color:#3b92d1>hat dem Spieler <color:#40d1db>%target% <color:#3b92d1>in den <color:#40d1db>God Modus<color:#3b92d1> gesetzt!"
+        on: "<color:#3b92d1>Der Spieler <color:#40d1db>%player% <color:#3b92d1>hat dem Spieler <color:#40d1db>%target% <color:#3b92d1>aus dem <color:#40d1db>God Modus<color:#3b92d1> gesetzt!"

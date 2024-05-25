@@ -1,0 +1,42 @@
+name: CraftCore
+version: '42'
+main: dev.thebjoredcraft.craftcore.CraftCore
+api-version: '1.20'
+author: TheBjoRedCraft
+commands:
+  messenger:
+    permission: craftcore.command.messenger
+  help:
+    permission: craftcore.command.help
+  night:
+    permission: craftcore.command.night
+  clear:
+    permission: craftcore.command.clear
+  deop:
+    permission: craftcore.command.deop
+  op:
+    permission: craftcore.command.op
+  ping:
+    permission: craftcore.command.ping
+  social:
+    permission: craftcore.command.social
+  time:
+    permission: craftcore.command.time
+  spawn:
+    permission: craftcore.command.spawn
+  compass:
+    permission: craftcore.command.compass
+  day:
+    permission: craftcore.command.day
+  feed:
+    permission: craftcore.command.feed
+  fly:
+    permission: craftcore.command.fly
+  god:
+    permission: craftcore.command.god
+  heal:
+    permission: craftcore.command.heal
+  rename:
+    permission: craftcore.command.rename
+  motd:
+    permission: craftcore.command.motd
