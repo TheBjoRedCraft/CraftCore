@@ -4,6 +4,14 @@ main: dev.thebjoredcraft.craftcore.CraftCore
 api-version: '1.20'
 author: TheBjoRedCraft
 commands:
+  vanish:
+    permission: craftcore.command.vanish
+  discord:
+    permission: craftcore.command.discord
+  emergencywhitelist:
+    permission: craftcore.command.emergencywhitelist
+  emergency:
+    permission: craftcore.command.emergency
   messenger:
     permission: craftcore.command.messenger
   help:

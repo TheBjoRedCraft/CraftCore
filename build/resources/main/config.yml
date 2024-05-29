@@ -1,5 +1,58 @@
+discord:
+  webhook-url: "https://discord.com/api/webhooks/1244983628115742720/TX-azR_OrWGwNbQ3Q5Oi8l4Pkb6crhnE66fG9jUFof3NgoQPDW4AfL7geYu2ybaKLC_w"
+
+emergency:
+  bypass:
 messages:
   command:
+    vanish:
+      show: "<color:#40d1db>Du <color:#3b92d1>bist nun <color:#40d1db>nicht mehrim Vanish!"
+      vanished: "<color:#40d1db>Du <color:#3b92d1>bist nun <color:#40d1db>im Vanish!"
+      public:
+        shown: "<green>>> <gray>%player%"
+        vanished: "<red><< <gray>%player%"
+      op:
+        vanished: "<color:#3b92d1>Der Spieler <color:#40d1db>%player% <color:#3b92d1>ist nun <color:#40d1db>im Vanish!"
+        shown: "<color:#3b92d1>Der Spieler <color:#40d1db>%player% <color:#3b92d1>ist nun <color:#40d1db>nicht im Vanish!"
+    emergencywl:
+      list: "<color:#3b92d1>Diese Spieler sind aktuell auf der <color:#40d1db>Notfall-Whitelist <gray>(</gray><yellow>%amount%</yellow><gray>):</gray> %args%"
+      remove: "<color:#40d1db>Du <color:#3b92d1>hast den Spieler <color:#40d1db>%args% <color:#3b92d1>von der <color:#40d1db>Notfall-Whitelist entfernt."
+      add: "<color:#40d1db>Du <color:#3b92d1>hast den Spieler <color:#40d1db>%args% <color:#3b92d1>zu der <color:#40d1db>Notfall-Whitelist hinzugefügt."
+      op:
+        remove: "<color:#40d1db>%player% <color:#3b92d1>hat den Spieler <color:#40d1db>%args% <color:#3b92d1>von der <color:#40d1db>Notfall-Whitelist entfernt!"
+        add: "<color:#40d1db>%player% <color:#3b92d1>hat den Spieler <color:#40d1db>%args% <color:#3b92d1>zu der <color:#40d1db>Notfall-Whitelist hinzugefügt!"
+    emergency:
+      join: "
+      <color:#ff0d00><b>DU KANNST NICHT JOINEN</b></color>
+
+
+     <color:#40d1db>Grund: <b>Notfall</b>
+
+Bitte warte einen Moment 
+    oder auf weitere
+      Informationen.
+
+
+     CraftCore v42"
+      kick: "
+      <color:#ff0d00><b>DU WURDEST GEKICKED</b></color>
+
+
+     <color:#40d1db>Grund: <b>Notfall</b>
+
+Bitte warte einen Moment 
+    oder auf weitere
+      Informationen.
+
+
+     CraftCore v42"
+      kicked: "<color:#40d1db>Du <color:#3b92d1>hast <color:#40d1db>%amount% Spieler <color:#3b92d1>durch den <color:#40d1db>Notfall gekicked<color:#3b92d1>!"
+      disabled: "<color:#40d1db>Du <color:#3b92d1>hast den <color:#40d1db>Notfall ausgeschaltet<color:#3b92d1>!"
+      enabled: "<color:#40d1db>Du <color:#3b92d1>hast einen <color:#40d1db>Notfall ausgelöst<color:#3b92d1>! Grund: <color:#40d1db>%args%"
+      op:
+        kicked: "<color:#40d1db>%player% <color:#3b92d1>hat <color:#40d1db>%amount% Spieler <color:#3b92d1>durch den <color:#40d1db>Notfall gekicked<color:#3b92d1>!"
+        disabled: "<color:#40d1db>%player% <color:#3b92d1>hat den <color:#40d1db>Notfall ausgeschaltet<color:#3b92d1>!"
+        enabled: "<color:#40d1db>%player% <color:#3b92d1>hat einen <color:#40d1db>Notfall ausgelöst<color:#3b92d1>! Grund: <color:#40d1db>%args%"
     god:
       on: "<color:#40d1db>Du <color:#3b92d1>bist nun im <color:#40d1db>God Modus<color:#3b92d1>!"
       off: "<color:#40d1db>Du <color:#3b92d1>bist nun nicht mehr im <color:#40d1db>God Modus<color:#3b92d1>!"
