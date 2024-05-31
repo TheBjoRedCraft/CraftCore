@@ -7,17 +7,23 @@ import dev.thebjoredcraft.craftcore.manager.CraftManager;
 import dev.thebjoredcraft.craftcore.manager.DataManager;
 import dev.thebjoredcraft.craftcore.manager.VanishManager;
 import dev.thebjoredcraft.craftcore.manager.emergency.EmergencyManager;
+import dev.thebjoredcraft.craftcore.manager.file.MessagesFileManager;
+import dev.thebjoredcraft.craftcore.manager.maintenance.Maintenance;
+import dev.thebjoredcraft.craftcore.manager.timer.Timer;
 import dev.thebjoredcraft.craftcore.util.Discord;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class CraftCore extends JavaPlugin {
-    public static CraftCore instance;
+    private static CraftCore instance;
     public static ConsoleManager consoleManager;
     public static DataManager dataManager;
     public static EmergencyManager emergencyManager;
+    public static MessagesFileManager messagesFileManager;
     public static VanishManager vanishManager;
-    public static Discord discord;
+    private static Maintenance maintenance;
+    private static Discord discord;
+    private static Timer timer;
 
     public static String PREFIX = "<gray>>> <color:#40d1db>CraftCore <gray>| <color:#3b92d1>";
 
@@ -35,8 +41,13 @@ public final class CraftCore extends JavaPlugin {
         CraftManager.load(dataManager);
         CraftManager.load(emergencyManager);
         CraftManager.load(vanishManager);
+        CraftManager.load(messagesFileManager);
 
         CraftCore.discord = new Discord();
+        CraftCore.timer = new Timer(this);
+        CraftCore.maintenance = new Maintenance();
+
+        this.saveResource("messages.yml", false);
 
         getCommand("spawn").setExecutor(new SpawnCommand());
         getCommand("rename").setExecutor(new RenameCommand());
@@ -60,12 +71,18 @@ public final class CraftCore extends JavaPlugin {
         getCommand("emergencywhitelist").setExecutor(new EmergencyWhitelistCommand());
         getCommand("discord").setExecutor(new DiscordCommand());
         getCommand("vanish").setExecutor(new VanishCommand());
+        getCommand("timer").setExecutor(new TimerCommand());
+        getCommand("youtube").setExecutor(new YouTubeCommand());
+        getCommand("reloadconfirm").setExecutor(new ReloadConfirmCommand());
+        getCommand("maintenance").setExecutor(new MaintenanceCommand());
+        getCommand("maintenancewhitelist").setExecutor(new MaintenanceWhitelistCommand());
 
         Bukkit.getPluginManager().registerEvents(new DamageListener(), this);
         Bukkit.getPluginManager().registerEvents(new JoinListener(), this);
         Bukkit.getPluginManager().registerEvents(new LeaveListener(), this);
         Bukkit.getPluginManager().registerEvents(new ChatListener(), this);
         Bukkit.getPluginManager().registerEvents(new InventoryClickListener(), this);
+        Bukkit.getPluginManager().registerEvents(new CommandListener(), this);
 
         saveDefaultConfig();
 
@@ -102,5 +119,17 @@ public final class CraftCore extends JavaPlugin {
 
     public static Discord getDiscord() {
         return discord;
+    }
+
+    public static Timer getTimer() {
+        return timer;
+    }
+
+    public static Maintenance getMaintenance() {
+        return maintenance;
+    }
+
+    public static MessagesFileManager getMessages() {
+        return messagesFileManager;
     }
 }

@@ -13,7 +13,7 @@ public class MessengerCommand implements CommandExecutor {
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
         if(sender instanceof Player player) {
             if (args.length == 1) {
-                player.sendMessage(MiniMessage.miniMessage().deserialize(CraftCore.getInstance().getConfig().getString(args[0], "")));
+                player.sendMessage(MiniMessage.miniMessage().deserialize(CraftCore.getMessages().getString(args[0])));
             }
         }
         return false;

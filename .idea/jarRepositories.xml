@@ -26,5 +26,10 @@
       <option name="name" value="sonatype" />
       <option name="url" value="https://oss.sonatype.org/content/groups/public/" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="intelligence Repository Haoshoku" />
+      <option name="name" value="intelligence Repository Haoshoku" />
+      <option name="url" value="https://mvn.intelligence-modding.de/haoshoku" />
+    </remote-repository>
   </component>
 </project>

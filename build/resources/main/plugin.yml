@@ -4,9 +4,28 @@ main: dev.thebjoredcraft.craftcore.CraftCore
 api-version: '1.20'
 author: TheBjoRedCraft
 commands:
+  maintenance:
+    permission: craftcore.command.maintenance
+  maintenancewhitelist:
+    permission: craftcore.command.maintenancewhitelist
+  reloadconfirm:
+    aliases:
+      - rl
+      - rlc
+      - rlconfirm
+      - reload
+    permission: craftcore.command.reloadconfirm
+  youtube:
+    aliases:
+      - yt
+    permission: craftcore.command.youtube
+  timer:
+    permission: craftcore.command.timer
   vanish:
     permission: craftcore.command.vanish
   discord:
+    aliases:
+      - dc
     permission: craftcore.command.discord
   emergencywhitelist:
     permission: craftcore.command.emergencywhitelist

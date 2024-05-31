@@ -1,7 +1,7 @@
 package dev.thebjoredcraft.craftcore.manager.emergency;
 
 import dev.thebjoredcraft.craftcore.CraftCore;
-import dev.thebjoredcraft.craftcore.util.message.Messenger;
+import dev.thebjoredcraft.craftcore.manager.message.Messenger;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 

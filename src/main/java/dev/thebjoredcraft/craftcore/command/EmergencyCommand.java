@@ -1,7 +1,7 @@
 package dev.thebjoredcraft.craftcore.command;
 
 import dev.thebjoredcraft.craftcore.CraftCore;
-import dev.thebjoredcraft.craftcore.util.message.Messenger;
+import dev.thebjoredcraft.craftcore.manager.message.Messenger;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -21,8 +21,8 @@ public class EmergencyCommand implements CommandExecutor {
                     }
                     CraftCore.getEmergencyManager().create(player, msg.toString());
 
-                    Messenger.send("command.emergency.on", player, msg.toString());
-                    Messenger.sendToOps("command.emergency.op.on", player, msg.toString());
+                    Messenger.send("command.emergency.enabled", player, msg.toString());
+                    Messenger.sendToOps("command.emergency.op.enabled", player, msg.toString());
                 }else{
                     Messenger.send("command.emergency.active", player);
                 }
@@ -30,8 +30,8 @@ public class EmergencyCommand implements CommandExecutor {
                 if(CraftCore.getEmergencyManager().isEmergency){
                     CraftCore.getEmergencyManager().isEmergency = false;
 
-                    Messenger.send("command.emergency.off", player);
-                    Messenger.sendToOps("command.emergency.op.off", player);
+                    Messenger.send("command.emergency.disabled", player);
+                    Messenger.sendToOps("command.emergency.op.disabled", player);
                 }else{
                     Messenger.send("command.emergency.inactive", player);
                 }

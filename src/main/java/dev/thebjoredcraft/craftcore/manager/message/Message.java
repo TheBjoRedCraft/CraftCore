@@ -1,4 +1,4 @@
-package dev.thebjoredcraft.craftcore.util.message;
+package dev.thebjoredcraft.craftcore.manager.message;
 
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.minimessage.MiniMessage;

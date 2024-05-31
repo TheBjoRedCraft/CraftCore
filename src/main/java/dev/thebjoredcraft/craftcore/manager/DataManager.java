@@ -7,7 +7,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
 import java.io.IOException;
-
+@Deprecated
 public class DataManager {
     public File dataFile = new File(CraftCore.getInstance().getDataFolder(), "data.yml");
     public FileConfiguration fileConfig = YamlConfiguration.loadConfiguration(dataFile);

@@ -1,6 +1,6 @@
 package dev.thebjoredcraft.craftcore.command;
 
-import dev.thebjoredcraft.craftcore.util.message.Messenger;
+import dev.thebjoredcraft.craftcore.manager.message.Messenger;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -19,7 +19,11 @@ public class DiscordCommand implements CommandExecutor, TabCompleter {
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
         if(sender instanceof Player player){
             if(args.length == 1 && args[0].equalsIgnoreCase("webhook")){
-                Messenger.sendFromConfig("discord.webhook-url", player);
+                if(player.hasPermission("craftcore.command.discord.webhook")) {
+                    Messenger.sendFromConfig("discord.webhook-url", player);
+                }
+            }else{
+                Messenger.send("command.discord", player);
             }
         }
         return false;
@@ -29,7 +33,11 @@ public class DiscordCommand implements CommandExecutor, TabCompleter {
         List<String> completions = new ArrayList<>();
 
         if (args.length == 1) {
-            return StringUtil.copyPartialMatches(args[0], List.of("webhook"), new ArrayList<>());
+            if(sender.hasPermission("craftcore.command.discord.webhook")) {
+                return StringUtil.copyPartialMatches(args[0], List.of("webhook"), new ArrayList<>());
+            }else{
+                return StringUtil.copyPartialMatches(args[0], List.of(), new ArrayList<>());
+            }
         }
         Collections.sort(completions);
         return completions;
