@@ -1,0 +1,115 @@
+
+
+command:
+  maintenance:
+    information: "Coming Soon"
+    kick: "\n<color:#ff0d00><b>DU WURDEST GEKICKED</b></color>\n\n<color:#40d1db>Grund: <b>Wartungsarbeiten</b>\nBitte warte einen Moment \noder auf weitere\nInformationen.\n\n\n CraftCore v42"
+    join: "\n<color:#ff0d00><b>DU KANNST NICHT JOINEN</b></color>\n\n\n<color:#40d1db>Grund: <b>Wartungsarbeiten</b>\n\nBitte warte einen Moment\noder auf weitere\nInformationen.\n\n\nCraftCore v42"
+    kicked: "<color:#40d1db>Du <color:#3b92d1>hast <yellow>%amount% Spieler <color:#3b92d1>durch die <color:#40d1db>Wartungsarbeiten gekicked<color:#3b92d1>!"
+    deactivate: "<color:#40d1db>Du <color:#3b92d1>hast die <color:#40d1db>Wartungsarbeiten deaktiviert<color:#3b92d1>!"
+    activate: "<dark_gray>---------------------------</dark_gray>\n%prefix%<color:#40d1db>Du <color:#3b92d1>hast die <color:#40d1db>Wartungsarbeiten aktiviert<color:#3b92d1>! \n%prefix%Grund: <color:#40d1db>%args%\n%prefix%<dark_gray>---------------------------</dark_gray>"
+    active: "<color:#3b92d1>Es läuft <color:#40d1db>bereits ein Wartung<color:#3b92d1>!"
+    inactive: "<color:#3b92d1>Es ist aktuell <color:#40d1db>keine Wartung aktiviert!<color:#3b92d1>"
+    list: "<color:#3b92d1>Diese Spieler sind aktuell auf der <color:#40d1db>Wartungs-Whitelist <gray>(</gray><yellow>%amount%</yellow><gray>):</gray> %args%"
+    remove: "<color:#40d1db>Du <color:#3b92d1>hast den Spieler <color:#40d1db>%args% <color:#3b92d1>von der <color:#40d1db>Wartungs-Whitelist entfernt."
+    add: "<color:#40d1db>Du <color:#3b92d1>hast den Spieler <color:#40d1db>%args% <color:#3b92d1>zu der <color:#40d1db>Wartungs-Whitelist hinzugefügt."
+    op:
+      kicked: "<color:#40d1db>%player% <color:#3b92d1>hat <color:#40d1db>%amount% Spieler <color:#3b92d1>durch den <color:#40d1db>Notfall gekicked<color:#3b92d1>!"
+      deactivate: "<color:#40d1db>%player% <color:#3b92d1>hat die <color:#40d1db>Wartungsarbeiten ausgeschaltet<color:#3b92d1>!"
+      activate: "<dark_gray>---------------------------</dark_gray>\n%prefix%<color:#40d1db>%player% <color:#3b92d1>hat die <color:#40d1db>Wartungsarbeiten eingeschaltet<color:#3b92d1>! \n%prefix%Grund: <color:#40d1db>%args%\n%prefix%<dark_gray>---------------------------</dark_gray>"
+      remove: "<color:#40d1db>%player% <color:#3b92d1>hat den Spieler <color:#40d1db>%args% <color:#3b92d1>von der <color:#40d1db>Wartungs-Whitelist entfernt!"
+      add: "<color:#40d1db>%player% <color:#3b92d1>hat den Spieler <color:#40d1db>%args% <color:#3b92d1>zu der <color:#40d1db>Wartungs-Whitelist hinzugefügt!"
+  vanish:
+    show: "<color:#40d1db>Du <color:#3b92d1>bist nun <color:#40d1db>nicht mehrim Vanish!"
+    vanished: "<color:#40d1db>Du <color:#3b92d1>bist nun <color:#40d1db>im Vanish!"
+    public:
+      shown: "<green>>> <gray>%player%"
+      vanished: "<red><< <gray>%player%"
+    op:
+      vanished: "<color:#3b92d1>Der Spieler <color:#40d1db>%player% <color:#3b92d1>ist nun <color:#40d1db>im Vanish!"
+      shown: "<color:#3b92d1>Der Spieler <color:#40d1db>%player% <color:#3b92d1>ist nun <color:#40d1db>nicht im Vanish!"
+  emergencywl:
+    list: "<color:#3b92d1>Diese Spieler sind aktuell auf der <color:#40d1db>Notfall-Whitelist <gray>(</gray><yellow>%amount%</yellow><gray>):</gray> %args%"
+    remove: "<color:#40d1db>Du <color:#3b92d1>hast den Spieler <color:#40d1db>%args% <color:#3b92d1>von der <color:#40d1db>Notfall-Whitelist entfernt."
+    add: "<color:#40d1db>Du <color:#3b92d1>hast den Spieler <color:#40d1db>%args% <color:#3b92d1>zu der <color:#40d1db>Notfall-Whitelist hinzugefügt."
+    op:
+      remove: "<color:#40d1db>%player% <color:#3b92d1>hat den Spieler <color:#40d1db>%args% <color:#3b92d1>von der <color:#40d1db>Notfall-Whitelist entfernt!"
+      add: "<color:#40d1db>%player% <color:#3b92d1>hat den Spieler <color:#40d1db>%args% <color:#3b92d1>zu der <color:#40d1db>Notfall-Whitelist hinzugefügt!"
+  emergency:
+    join: "\n<color:#ff0d00><b>DU KANNST NICHT JOINEN</b></color>\n\n\n<color:#40d1db>Grund: <b>Notfall</b>\n\nBitte warte einen Moment\noder auf weitere\nInformationen.\n\n\nCraftCore v42"
+    kick: "\n<color:#ff0d00><b>DU WURDEST GEKICKED</b></color>\n\n<color:#40d1db>Grund: <b>Notfall</b>\nBitte warte einen Moment \noder auf weitere\nInformationen.\n\n\n CraftCore v42"
+    kicked: "<color:#40d1db>Du <color:#3b92d1>hast <color:#40d1db>%amount% Spieler <color:#3b92d1>durch den <color:#40d1db>Notfall gekicked<color:#3b92d1>!"
+    disabled: "<color:#40d1db>Du <color:#3b92d1>hast den <color:#40d1db>Notfall ausgeschaltet<color:#3b92d1>!"
+    enabled: "<dark_gray>---------------------------</dark_gray>\n%prefix%<color:#40d1db>Du <color:#3b92d1>hast einen <color:#40d1db>Notfall ausgelöst<color:#3b92d1>! \n%prefix%Grund: <color:#40d1db>%args%\n%prefix%<dark_gray>---------------------------</dark_gray>"
+    active: "<color:#3b92d1>Es läuft <color:#40d1db>bereits ein Notfall<color:#3b92d1>!"
+    inactive: "<color:#3b92d1>Es ist aktuell <color:#40d1db>kein Notfall aktiviert!<color:#3b92d1>"
+    op:
+      kicked: "<color:#40d1db>%player% <color:#3b92d1>hat <color:#40d1db>%amount% Spieler <color:#3b92d1>durch den <color:#40d1db>Notfall gekicked<color:#3b92d1>!"
+      disabled: "<color:#40d1db>%player% <color:#3b92d1>hat den <color:#40d1db>Notfall ausgeschaltet<color:#3b92d1>!"
+      enabled: "<dark_gray>---------------------------</dark_gray>\n%prefix%<color:#40d1db>%player% <color:#3b92d1>hat einen <color:#40d1db>Notfall ausgelöst<color:#3b92d1>! \n%prefix%Grund: <color:#40d1db>%args%\n%prefix%<dark_gray>---------------------------</dark_gray>"
+  god:
+    on: "<color:#40d1db>Du <color:#3b92d1>bist nun im <color:#40d1db>God Modus<color:#3b92d1>!"
+    off: "<color:#40d1db>Du <color:#3b92d1>bist nun nicht mehr im <color:#40d1db>God Modus<color:#3b92d1>!"
+    op:
+      on: "<color:#3b92d1>Der Spieler <color:#40d1db>%player% <color:#3b92d1>ist nun im <color:#40d1db>God Modus<color:#3b92d1>!"
+      off: "<color:#3b92d1>Der Spieler <color:#40d1db>%player% <color:#3b92d1>ist nun nicht mehr im <color:#40d1db>God Modus<color:#3b92d1>!"
+    target:
+      on: "<color:#40d1db>Du <color:#3b92d1>hast <color:#40d1db>%target% in den <color:#40d1db>God Modus<color:#3b92d1> gesetzt!"
+      off: "<color:#40d1db>Du <color:#3b92d1>hast <color:#40d1db>%target% aus dem <color:#40d1db>God Modus<color:#3b92d1> gesetzt!"
+      op:
+        off: "<color:#3b92d1>Der Spieler <color:#40d1db>%player% <color:#3b92d1>hat dem Spieler <color:#40d1db>%target% <color:#3b92d1>in den <color:#40d1db>God Modus<color:#3b92d1> gesetzt!"
+        on: "<color:#3b92d1>Der Spieler <color:#40d1db>%player% <color:#3b92d1>hat dem Spieler <color:#40d1db>%target% <color:#3b92d1>aus dem <color:#40d1db>God Modus<color:#3b92d1> gesetzt!"
+  deop:
+    deop: "<color:#3b92d1>Der Spieler <color:#40d1db>%player% <color:#3b92d1>hat dem Spieler <color:#40d1db>%target% <red><bold>Operator</bold></red> entzogen<color:#3b92d1>!"
+    target: "<color:#3b92d1>Du hast dem Spieler <color:#40d1db>%target% <color:#3b92d1><red><bold>Operator</bold></red> entzogen<color:#3b92d1>."
+  feed:
+    target:
+      op: "<color:#3b92d1>Der Spieler <color:#40d1db>%player% <color:#3b92d1>hat den Spieler <color:#40d1db>%target% gefüttert<color:#3b92d1>!"
+      target: "<color:#40d1db>Du <color:#3b92d1>hast den Spieler <color:#40d1db>%target% geheilt<color:#3b92d1>!"
+    op: "<color:#3b92d1>Der Spieler <color:#40d1db>%player% <color:#3b92d1>wurde <color:#40d1db>gefüttert<color:#3b92d1>!"
+    feed: "<color:#40d1db>Du <color:#3b92d1>wurdest <color:#40d1db>gefüttert<color:#3b92d1>!"
+  fly:
+    on: "<color:#40d1db>Du <color:#3b92d1>kannst nun <color:#40d1db>fliegen<color:#3b92d1>!"
+    off: "<color:#40d1db>Du <color:#3b92d1>kannst nun nicht mehr <color:#40d1db>fliegen<color:#3b92d1>!"
+    target:
+      off: "<color:#3b92d1>Der Spieler <color:#40d1db>%target% <color:#3b92d1>kann nun nicht mehr<color:#40d1db>fliegen<color:#3b92d1>!"
+      on: "<color:#3b92d1>Der Spieler <color:#40d1db>%target% <color:#3b92d1>kann nun <color:#40d1db>fliegen<color:#3b92d1>!"
+    op:
+      off: "<color:#3b92d1>Der Spieler <color:#40d1db>%player% fliegt nun nicht mehr<color:#3b92d1>!"
+      on: "<color:#3b92d1>Der Spieler <color:#40d1db>%player% fliegt nun<color:#3b92d1>!"
+      target:
+        off: "<color:#3b92d1>Der Spieler <color:#40d1db>%player% <color:#3b92d1>hat dem Spieler<color:#40d1db>%player% Rechte zum fliegen gegeben<color:#3b92d1>!"
+        on: "<color:#3b92d1>Der Spieler <color:#40d1db>%player% <color:#3b92d1>hat dem Spieler<color:#40d1db>%player% Rechte zum fliegen entzogen<color:#3b92d1>!"
+  heal:
+    target:
+      op: "<color:#3b92d1>Der Spieler <color:#40d1db>%player% <color:#3b92d1>hat <color:#40d1db>%target% geheilt<color:#3b92d1>!"
+      target: "<color:#3b92d1>Du hast <color:#40d1db>%target% geheilt<color:#3b92d1>!"
+    op: "<color:#3b92d1>Der Spieler <color:#40d1db>%player% <color:#3b92d1>hat <color:#40d1db>sich geheilt<color:#3b92d1>!"
+    heal: "<color:#3b92d1>Du hast <color:#40d1db>dich geheilt<color:#3b92d1>!"
+  help:
+  #helps
+  motd:
+    op: "<color:#3b92d1>Der Spieler <color:#40d1db>%player% <color:#3b92d1>hat die <color:#40d1db>Message of The Day <color:#3b92d1>zu <color:#40d1db>%args% <color:#3b92d1>gesetzt."
+    motd: "<color:#3b92d1>Du hast die <color:#40d1db>Message of The Day <color:#3b92d1>zu <color:#40d1db>%args% <color:#3b92d1>gesetzt."
+  day:
+    op: "<color:#3b92d1>Der Spieler <color:#40d1db>%player% <color:#3b92d1>hat die <color:#40d1db>Zeit <color:#3b92d1>zu <color:#40d1db>Tag <color:#3b92d1>gesetzt."
+    day: "<color:#3b92d1>Du hast die <color:#40d1db>Zeit <color:#3b92d1>zu <color:#40d1db>Tag <color:#3b92d1>gesetzt."
+  night:
+    op: "<color:#3b92d1>Der Spieler <color:#40d1db>%player% <color:#3b92d1>hat die <color:#40d1db>Zeit <color:#3b92d1>zu <color:#40d1db>Nacht <color:#3b92d1>gesetzt."
+    night: "<color:#3b92d1>Du hast die <color:#40d1db>Zeit <color:#3b92d1>zu <color:#40d1db>Nacht <color:#3b92d1>gesetzt."
+  op:
+    op: "<color:#3b92d1>Der Spieler <color:#40d1db>%player% <color:#3b92d1>hat <color:#40d1db>%target% <color:#3b92d1> zum <red><bold>Operator</bold></red> ernannt!"
+    target: "<color:#3b92d1>Du hast <color:#40d1db>%target% <color:#3b92d1>zum <red><bold>Operator</bold></red> <color:#3b92d1>ernannt."
+  ping:
+    ping: "<color:#3b92d1>Dein Ping: <color:#40d1db> %amount%"
+  rename:
+    op: "<color:#3b92d1>Der Spieler <color:#40d1db>%player% <color:#3b92d1>hat ein <color:#40d1db>Item umbenannt<color:#3b92d1>."
+    rename: "<color:#3b92d1>Du hast das <color:#40d1db>Item umbenannt<color:#3b92d1>!"
+  social:
+    social: "<color:#3b92d1>GitHub: <color:#40d1db><click:open_url:'https://github.com/TheBjoRedCraft'>https://github.com/TheBjoRedCraft</click>"
+  spawn:
+    op: "<color:#40d1db>%player% <color:#3b92d1>hat sich zum <color:#40d1db>Spawn teleportiert<color:#3b92d1>."
+    spawn: "<color:#3b92d1>Du hast dich zum <color:#40d1db>Spawn teleportiert<color:#3b92d1>!"
+  time:
+    op: "<color:#3b92d1>Der Spieler <color:#40d1db>%player% <color:#3b92d1>hat die <color:#40d1db>Zeit <color:#3b92d1>zu <color:#40d1db>%amount% <color:#3b92d1>gesetzt."
+    time: "<color:#3b92d1>Du hast die <color:#40d1db>Zeit <color:#3b92d1>zu <color:#40d1db>%amount% <color:#3b92d1>gesetzt."
